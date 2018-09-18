@@ -43,20 +43,20 @@ namespace NewMovingPicture
 
         private async void button2_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < 80; i++)
             {
-                pictureBox1.Location = new Point(pictureBox1.Location.X + 4, pictureBox1.Location.Y - 4);
-                await Task.Delay(50);
+                pictureBox1.Location = new Point(pictureBox1.Location.X + 1, pictureBox1.Location.Y - 1);
+                await Task.Delay(12);
             }
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < 80; i++)
             {
-                pictureBox1.Location = new Point(pictureBox1.Location.X + 4, pictureBox1.Location.Y + 4);
-                await Task.Delay(50);
+                pictureBox1.Location = new Point(pictureBox1.Location.X + 1, pictureBox1.Location.Y + 1);
+                await Task.Delay(12);
             }
-            for (int i = 0; i < 40; i++)
+            for (int i = 0; i < 150; i++)
             {
-                pictureBox1.Location = new Point(pictureBox1.Location.X - 4, pictureBox1.Location.Y);
-                await Task.Delay(50);
+                pictureBox1.Location = new Point(pictureBox1.Location.X - 1, pictureBox1.Location.Y);
+                await Task.Delay(12);
             }
         }
     }
