@@ -67,17 +67,23 @@ namespace NewMovingPicture
                 await Task.Delay(100);
             }
         }
-
-
-
-
-
-
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
+        private async void button4_Click(object sender, EventArgs e)
+        {
+            for (int i= 0; i< 5; i++)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X + 10, pictureBox1.Location.Y + 10);
+                await Task.Delay(Convert.ToInt32(textBox1.Text));
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
