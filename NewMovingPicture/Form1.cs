@@ -84,7 +84,8 @@ namespace NewMovingPicture
             }
             catch
             {
-                MessageBox.Show("Don't be a fool please insert a number.");
+                MessageBox.Show("Don't be a fool please insert a number. For example 100.");
+                pictureBox1.Location = new Point(pictureBox1.Location.X + 50, pictureBox1.Location.Y - 50);
             }
         }
 
